@@ -1,0 +1,121 @@
+.logo_principal {
+    margin-top: 4.5rem;
+    width: 100vw;
+}
+
+.titulo_conteudo {
+    display: none;
+}
+
+.lista__contas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.lista__contas-item {
+    margin: 0 1em;
+}
+
+.logo_image{
+    width: 50px;
+}
+
+.main__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao__login-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao__login {
+    background-color: var(--azul-secundario);
+    width: 90%;
+    border: none;
+    border-radius: 25px;
+    font-size: 2rem;
+    padding: 0.8rem 0;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: var(--branco);
+    
+}
+
+.botao__login:hover {
+    background-color: var(--branco);
+    color: var(--azul-secundario);
+}
+
+.main__texto{
+    color: var(--azul-secundario);
+    font-size: 1em;
+}
+
+.main__senha-link, .main__texto-cadastrar {
+    color: var(--azul-secundario);
+}
+
+@media screen and (min-width: 768px) {
+    .logo_image {
+        width: 85px;
+    }
+
+    .botao__login-link {
+        width: 80%;
+    }
+
+    .botao__login{
+        font-size: 3rem;
+    }
+
+    .main__texto {
+        font-size: 1.8rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main__page {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo_principal {
+        width: 42%;
+    }
+
+    .conteudo {
+        margin: 8rem 3rem 0 0;
+    }
+
+    .titulo_conteudo {
+        display: block;
+        font-family: var(--fonte-titulo);
+        max-width: 500px;
+        font-size: 2.5rem;
+        color: var(--branco);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .logo_image {
+        width: 70px;
+    }
+
+    .contas {
+        margin: 2.5rem 0 2.5rem 2rem;
+    }
+
+    .botao__login-link + p {
+        margin-top: 1.5rem;
+    }
+}

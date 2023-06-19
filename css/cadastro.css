@@ -1,0 +1,94 @@
+.logo_dindinvest {
+    display: none;
+}
+
+.titulo {
+    color: var(--azul-secundario);
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.lista__contas {
+    width: 90%;
+}
+
+.cadastrar {
+    width: 90%;
+}
+
+label {
+    font-family: var(--fonte-main);
+    color: var(--azul-secundario);
+}
+
+input {
+    background: linear-gradient(173deg, #B7B7B7 0%, #F3F3F3 89.73%);
+    box-shadow: inset 0.798055px 6.49963px 6.54844px rgba(174, 174, 174, 0.5), 
+    inset -0.798055px -6.49963px 6.54844px rgba(251, 251, 251, 0.5);
+}
+
+input::placeholder {
+    font-family: var(--fonte-main);
+}
+
+.botao-cadastro_link {
+    width: 100%;
+}
+
+.botao-cadastro {
+    background-color: var(--azul-secundario);
+    border: none;
+    color: var(--branco);
+    font-size: 24px;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 25px;
+}
+
+.botao-cadastro:hover {
+    background-color: var(--branco);
+    color: var(--azul-secundario);
+}
+
+@media screen and (min-width: 768px) {
+
+    .logo_dindinvest{
+        display: block;
+        width: 200px;
+    }
+
+    .titulo {
+        font-size: 22px;
+        max-width: 80%;
+    }
+
+    label, .form-control {
+        font-size: 23px;
+    }
+
+    .botao-cadastro_link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .botao-cadastro {
+        width: 90%;
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .logo_dindinvest {
+        width: 250px;
+    }
+    .cadastrar {
+        margin: 5rem 2rem 0 0;
+    }
+
+    label, .form-control {
+        font-size: 20px;
+    }
+}
