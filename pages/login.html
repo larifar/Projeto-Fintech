@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DinDInvest - Cadastre-se</title>
+    <title>DinDInvest - Login</title>
     <link rel="icon" href="../images/dindinvest-logo_semnome.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../css/cadastro.css" />
-
+    <link rel="stylesheet" href="../css/login.css"/>
 </head>
 
 <body>
     <div class="d-flex flex-column justify-content-center align-items-center flex-lg-row">
-        <div class="container-lg conteudo d-flex flex-column justify-content-center align-items-center">
-            <img src="../images/dindinvest-logo_semnome.png" class="logo_dindinvest" />
-            <h2 class="titulo text-center p-1">Para se cadastrar clique em uma das opções abaixo ou responda o
+        <div class="container-lg conteudo_login d-flex flex-column justify-content-center align-items-center">
+            <img src="../images/dindinvest-logo_semnome.png" class="logo_dindinvest-login" />
+            <h2 class="titulo text-center p-1">Para realizar o login clique em uma das opções abaixo ou responda o
                 questionário</h2>
 
-            <!-- contas -->
+            <!-- contas login -->
             <div class="container">
-                <ul class="lista__contas d-flex align-content-center mt-2">
+                <ul class="lista__contas d-flex align-content-center mt-2 gap-md-2">
                     <li class="lista__contas-item"><a href="#" class="lista__contas-link">
                             <img src="../images/icone_google.png" alt="Conta google" class="logo_image" />
                         </a></li>
@@ -38,37 +36,22 @@
                 </ul>
             </div>
         </div>
-        <!-- formulario cadastro -->
-        <div class="container cadastrar">
-            <form action="./login.html" method="get" id="cadastroform">
-                <div class="mb-2">
-                    <label for="nomeUser" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nomeUser">
-                </div>
-
+        <!-- login formulario -->
+        <div class="container entrar">
+            <form action="#" method="get" id="loginform">
                 <div class="mb-2">
                     <label for="emailUser" class="form-label">Email</label>
                     <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
                 </div>
 
                 <div class="mb-2">
-                    <label for="emailUser" class="form-label">Confirmação de email</label>
-                    <input type="email" class="form-control" id="emailUser">
-                </div>
-
-                <div class="mb-2">
-                    <label for="senhaUser" class="form-label">Senha (8 dígitos)</label>
-                    <input type="password" class="form-control" id="senhaUser">
-                </div>
-
-                <div class="mb-2">
-                    <label for="senhaUser" class="form-label">Confirmação de Senha</label>
+                    <label for="senhaUser" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="senhaUser">
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <a href="#" class="botao-cadastro_link">
-                        <button type="submit" class="botao-cadastro" form="cadastroform">Cadastrar</button></a>
+                    <a href="#" class="botao-login_link">
+                        <button type="submit" class="botao-login">Login</button></a>
                 </div>
             </form>
         </div>
@@ -79,5 +62,4 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
